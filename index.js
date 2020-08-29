@@ -13,7 +13,7 @@ $(document).ready(function(){
 
     function toggleCheckItem(){
         $(document).on( "click", ".shopping-item-toggle", function(){
-            crossItem = $(event.target).parents("li").children(".shopping-item");
+            crossItem = $(this).parents("li").children(".shopping-item");
             $(crossItem).toggleClass('shopping-item__checked');
         })
     }
